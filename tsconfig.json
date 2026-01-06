@@ -1,0 +1,3 @@
+{
+  "extends": "@uin-samata/config/tsconfig.base.json"
+}

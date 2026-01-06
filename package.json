@@ -1,0 +1,37 @@
+{
+  "name": "uin-samata",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @uin-samata/db db:push",
+    "db:studio": "turbo -F @uin-samata/db db:studio",
+    "db:generate": "turbo -F @uin-samata/db db:generate",
+    "db:migrate": "turbo -F @uin-samata/db db:migrate",
+    "db:start": "turbo -F @uin-samata/db db:start",
+    "db:watch": "turbo -F @uin-samata/db db:watch",
+    "db:stop": "turbo -F @uin-samata/db db:stop",
+    "db:down": "turbo -F @uin-samata/db db:down"
+  },
+  "dependencies": {
+    "@uin-samata/env": "*",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@uin-samata/config": "*",
+    "turbo": "^2.6.3",
+    "typescript": "^5"
+  },
+  "packageManager": "npm@11.6.2"
+}
