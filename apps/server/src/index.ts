@@ -40,13 +40,13 @@ const apiHandler = new OpenAPIHandler(appRouter, {
 app.use(async (req, res, next) => {
   const rpcResult = await rpcHandler.handle(req, res, {
     prefix: "/rpc",
-    context: {},
+    context: { session: null },
   });
   if (rpcResult.matched) return;
 
   const apiResult = await apiHandler.handle(req, res, {
     prefix: "/api-reference",
-    context: {},
+    context: { session: null },
   });
   if (apiResult.matched) return;
 
