@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "UM-PTKIN 2026 - Ujian Masuk Perguruan Tinggi Keagamaan Islam Negeri",
+  title: "UM-PTKIN 2026 - Ujian Masuk Perguruan Tingssgi Keagamaan Islam Negeri",
   description:
     "Pendaftaran Ujian Masuk Perguruan Tinggi Keagamaan Islam Negeri 2026. Informasi lengkap tentang persyaratan, jadwal, biaya, dan alur pendaftaran.",
   icons: {
@@ -33,7 +33,7 @@ export default function RootLayout({
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Navigation />
-            <main 
+            <main
               className="flex-1 pt-[var(--navbar-height)]"
               style={{ paddingTop: 'var(--navbar-height)' }}
             >
